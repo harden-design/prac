@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>网易严选</title>
+    <link type="text/css" rel="styleSheet" href="网易2.css" />
+    <link type="text/css" rel="styleSheet" href="css/iconfont.css" />
+    <script>
+      var num = 0;
+      setInterval(function () {
+        num++;
+        var img_lis = document.querySelectorAll(".banner");
+        for (var i = 0; i < img_lis.length; i++) {
+          img_lis[i].style.display = "none";
+        }
+        // img_lis[num].style.display = "block";
+
+        if (num == img_lis.length) {
+          num = 0;
+          img_lis[0].style.display = "block";
+        } else {
+          img_lis[num].style.display = "block";
+        }
+      }, 1500);
+    </script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div>
+        <ul>
+          <li>
+            <a href="">登录/注册</a>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href="">我的订单</a>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href="">会员</a>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href="">甄选家</a>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href="">企业采购</a>
+            <span class="iconfont">&#xe658;</span>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href="">客户服务</a>
+            <span class="iconfont">&#xe658;</span>
+            <span class="bianjie">|</span>
+          </li>
+          <li>
+            <a href=""><span class="iconfont">&#xe6f4;</span>APP</a>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+      <div class="h-main">
+        <div class="logo">
+          <a href=""><img src="newimg/logo.png" /></a>
+        </div>
+        <div class="search">
+          <form>
+            <span class="iconfont">&#xe63c;</span>
+            <input
+              type="text"
+              class="search-t"
+              placeholder="4.11周年庆省钱卡"
+            />
+            <input type="submit" value="搜索" class="search-b" />
+          </form>
+          <div class="h-a">
+            <ul>
+              <li>
+                <a href="" class="h-a-f">全品类8折券，放肆买</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a href="">杭州学生保供口罩</a>
+                <span>|</span>
+              </li>
+              <li><a href="">除醛空净 直降500</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="shopcar">
+          <span class="iconfont">&#xe63b;</span>
+          <a>购物车</a>
+          <span class="num">0</span>
+        </div>
+        <div class="subnav">
+          <ul class="s-n-u">
+            <li><a href="" class="s-n-u-f" ;>首页</a></li>
+            <li><a href="">居家生活</a></li>
+            <li><a href="">服饰鞋包</a></li>
+            <li><a href="">美食酒水</a></li>
+            <li><a href="">个户清理</a></li>
+            <li><a href="">母婴亲子</a></li>
+            <li><a href="">运动旅行</a></li>
+            <li><a href="">数码家电</a></li>
+            <li><a href="">全球特色</a></li>
+            <li><a href="">为你严选</a></li>
+            <li><a href="">众筹</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="banner_lis">
+      <ul>
+        <li class="banner"><img src="newimg/banner1.jpg" /></li>
+        <li class="banner"><img src="newimg/banner2.jpg" /></li>
+        <li class="banner"><img src="newimg/banner3.jpg" /></li>
+        <li class="banner"><img src="newimg/banner4.jpg" /></li>
+        <li class="banner"><img src="newimg/banner5.jpg" /></li>
+      </ul>
+    </div>
+    <div>
+      <div class="gezi">
+        <div class="gezizi"></div>
+      </div>
+      <div class="gezi">
+        <div class="gezizi"></div>
+      </div>
+      <div class="gezi">
+        <div class="gezizi"></div>
+      </div>
+      <div class="gezi">
+        <div class="gezizi"></div>
+      </div>
+      <div class="gezi">
+        <div class="gezizi"></div>
+      </div>
+    </div>
+  </body>
+</html>
